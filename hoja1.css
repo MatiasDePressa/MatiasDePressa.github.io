@@ -1,0 +1,461 @@
+/*Barra Superior*/
+
+
+@font-face {
+    font-family: 'coffe';
+    src: url(fuentes/Coffee.ttf);
+}
+
+@font-face{
+  font-family: 'carta';
+  src: url(fuentes/Coffee\ Bean.ttf);
+}
+
+#sucu{
+font-family: 'coffe';
+color: #542200;
+text-align: center;
+font-size: 350%;
+}
+
+#navlist {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 999;
+}
+ 
+
+#navlist a {
+    float:left;
+    font-family: 'cdoffe';
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 999;
+}
+.navlist-right{
+    float:right;
+    z-index: 999;
+}
+
+#navlist a:hover {
+    background-color:#290001;
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+ 
+.search input[type=text]{
+    width:300px;
+    height:25px;
+    border-radius:25px;
+    border: none;
+    z-index: 999;
+
+}
+ 
+.search{
+    float:right;
+    margin:7px;
+    z-index: 999;
+
+}
+ 
+.search button{
+    background-color: #000000;
+    color: #000000;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/*Fondo*/
+
+
+body {
+    animation: changeBg 5s infinite
+    alternate linear;
+}
+
+@keyframes changeBg {
+0% {
+    background: #6c4a1a;
+}
+25% {
+    background: #b58a4b;
+}
+50% {
+    background: #7B6B43;
+}
+75% {
+    background: #685634;
+}
+100% {
+    background: #806443;
+}
+}
+
+
+/*Fotos Sucursales*/
+
+
+.fotos{
+  height: 225px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+    height: 225px;
+    width: 350px;
+    position:relative;
+    border-radius: 15px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #000;
+}
+
+h1{
+    margin-top: 3%;
+    z-index: 998;
+}
+
+#Cafe{
+color:#77410f;
+bottom: 0;
+position: absolute;
+opacity: 0;
+width: 100%;
+height: 30px;
+transition: opacity 1s;
+background-color: rgba(0, 0, 0, 0.877);
+text-align: center;
+font-family:'coffe';
+font-size: 200%;
+}
+
+#foto1{
+  background: url(Cafe1.jpg) center center no-repeat;
+  background-size: 300px;
+  z-index: 998;
+  margin-left: 60px;
+  background-size: 100% 100%;
+}
+#foto1:hover{
+    background: url(Cafe1.jpg) right center no-repeat;
+    background-size: 500px;
+    z-index: 998;
+}
+#foto1:hover #Cafe {
+    opacity: 1;
+    z-index: 998;
+}
+
+#foto2{
+    background: url(Cafe2.png) center center no-repeat;
+    background-size: 300px;
+    margin-left: 60px;
+    background-size: 100% 100%;
+  }
+#foto2:hover{
+      background: url(Cafe2.png) right center no-repeat;
+      background-size: 500px;
+  }
+#foto2:hover #Cafe {
+      opacity: 1;
+  }
+
+#foto3{
+    background: url(Cafe3.jpg) center center no-repeat;
+    background-size: 300px;
+    margin-left: 60px;
+    background-size: 100% 100%;
+  }
+#foto3:hover{
+      background: url(Cafe3.jpg) right center no-repeat;
+      background-size: 500px;
+  }
+#foto3:hover #Cafe {
+      opacity: 1;
+  }
+
+#foto4{
+    background: url(Cafe4.webp) center center no-repeat;
+    background-size: 300px;
+    margin-left: 60px;
+    background-size: 100% 100%;
+  }
+#foto4:hover{
+      background: url(Cafe4.webp) right center no-repeat;
+      background-size: 500px;
+  }
+#foto4:hover #Cafe {
+      opacity: 1;
+  }
+
+
+
+/*letras grandes*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
+/*abajo*/
+
+
+.abajo{
+    height: 200px;
+    width:100%;
+    background: #7c4521;
+    z-index: 999;
+}
+
+h5{
+    color: #000;
+    text-align: center;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 999;
+}
+
+
+/* Cafe guts*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+
+body {
+background: #DFC2F2;
+	background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+	background-attachment: fixed;	
+	background-size: cover;
+	}
+
+#container{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+	
+}
+
+
+
+/* 	detalles  */
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+/* 	nombre */
+#container .product-details h1{
+	font-family: coffe;
+	display: inline-block;
+	position: relative;
+	font-size: 34px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+/* informacion importante */
+#container .product-details > p {
+	font-family: 'carta';
+	text-align: center;
+	font-size: 30px;
+	color: #7d7d7d;
+	
+}
+
+/* control */
+
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+/* Button */
+.btn {
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background: #49C608;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.btn:hover{transform: translateY(-4px);}
+
+.btn span {
+	font-family: coffe;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+/* shopping cart icon */
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+}
+
+.btn .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+/* the Icon */
+.btn .shopping-cart {
+	transform: translateX(-100%);
+  position: absolute;
+	background: #333;
+	z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+/* buy */
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+.btn:hover .price {transform: translateX(-110%);}
+
+.btn:hover .shopping-cart {transform: translateX(0%);}
+
+
+
+/* product image  */
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+  float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: coffe;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 120%;
+    cursor: no-drop;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
